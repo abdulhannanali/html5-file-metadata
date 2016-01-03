@@ -41,8 +41,8 @@ $(document).ready(function () {
 
 
     fileTemplate += "<td>" + fileName + "</td>"
-    fileTemplate += "<td>" + size + "</td>"
     fileTemplate += "<td>" + type + "</td>"
+    fileTemplate += "<td>" + Math.round(size/1048576, 3) + " mb </td>"
     fileTemplate += "<td>" + lastModified + "</td>"
     // if (type.match(/image\/*/)) {
     //   fileTemplate += "<td>Yes</td>"
