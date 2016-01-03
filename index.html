@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Image Uploader</title>
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+  </head>
+  <body>
+    <nav class="indigo">
+      <div class="nav-wrapper">
+          <div class="row">
+            <!-- <ul id="nav-mobile">
+              <li><a href="sass.html">Sass</a></li>
+            </ul> -->
+            <div class="col s12">
+              <a href="#" class="brand-logo">WEUploadImages</a>
+            </div>
+          </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row center">
+        <h3>Files metadata</h3>
+        <h5>Get some files metadata<i class="em em-smile_cat"></i></h5>
+        <!-- file selector -->
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <input type="file" id="filesUpload" multiple>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </div>
+        <!-- progress ring -->
+        </div>
+        <div class="row" id="progressBar" style="display: none;">
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </div>
+        <div class="row output-meta">
+          <table>
+            <thead>
+                <th data-field="name">File name</th>
+                <th data-field="type">Type</th>
+                <th data-field="size">Size</th>
+                <th data-field="date">Date Modified</th>
+                <!-- <th data-field="available?">Download available?</td> -->
+            </thead>
+            <tbody class="output-table-body">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="bower_components/jsrender/jsrender.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
